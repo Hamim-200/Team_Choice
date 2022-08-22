@@ -2,7 +2,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     const playerValue = getInputValueById('player-budget');
 
     if (isNaN(playerValue)) {
-        alert('Enter a Number');
+        alert('Please Enter a Number');
         return;
     }
     else if (playerValue < 0) {
@@ -34,11 +34,11 @@ document.getElementById('calculate-total').addEventListener('click', function ()
         return;
     }
     if (isNaN(coachAmountValue)) {
-        alert('Enter a Number');
+        alert(' Please Enter a Number');
         return;
     }
     else if (isNaN(managerAmountValue)) {
-        alert('Enter a Number');
+        alert(' Please Enter a Number');
         return;
     }
 
