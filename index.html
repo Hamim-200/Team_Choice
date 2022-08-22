@@ -19,7 +19,7 @@
                 <img src="images/picture 1.png" alt="picture-1" />
             </div>
             <div class="md:col-span-6 my-auto text-center px-5">
-                <h1 class="text-4xl font-bold italic text-orange-600">
+                <h1 class="text-4xl font-bold italic text-blue-600">
                     Choice your team for next worldcup.
                 </h1>
                 <img class="ml-auto mr-28 hidden lg:block" src="images/underline.png" alt="" />
@@ -40,8 +40,8 @@
     <!-- Main Section Start -->
     <main class="mb-36">
         <section class="lg:grid lg:grid-cols-12 gap-4 mx-5 md:mx-32 mt-5">
+            <!-- Card start here  -->
             <div class="grid md:grid-cols-3 lg:col-span-8 gap-4">
-                <!-- Card start here  -->
                 <!-- card-1 -->
                 <div class="bg-slate-900 text-white">
                     <div>
@@ -156,9 +156,71 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- Card ends Here -->
 
+            <!-- Side Menu Start   -->
+            <div class="lg:col-span-4 mt-5 md:mt-0">
+                <!-- Selected Player start -->
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th class="text-2xl font-semibold">
+                                    Selected Player-
+                                    <span id="selected-total" class="text-blue-600 text-2xl font-bold">V</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-container">
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Selected Player End -->
+
+                <!-- Taka Poysha Start -->
+                <div class="bg-black text-center mt-4 py-5">
+                    <h2 class="text-2xl font-bold text-blue-600">Player Cost</h2>
+                    <div class="mt-4 flex justify-between px-5">
+                        <p class="text-white text-xl font-semibold text-blue-600">Per Player :</p>
+                        <input class="w-2/4 px-2 py-1 text-black" type="text" id="player-budget"
+                            placeholder="Player Amount" />
+                    </div>
+                    <button id="calculate"
+                        class="text-white font-semibold text-xl py-2 hover:bg-sky-700 bg-blue-900 w-11/12 text-center my-5">
+                        Calculate
+                    </button>
+                    <h1 class="mb-2 text-blue-600 text-2xl font-bold">
+                        Total Player Cost : $<span id="player-expense">00</span>
+                    </h1>
+
+                    <div class="my-5 flex justify-between px-5">
+                        <p class="text-white text-xl font-semibold">Manager :</p>
+                        <input class="w-2/4 px-2 py-1 text-black" type="text" id="Manager Amount"
+                            placeholder="Manager amount" />
+                    </div>
+                    <div class="flex justify-between px-5">
+                        <p class="text-white text-xl font-semibold">Coach :</p>
+                        <input class="w-2/4 px-2 py-1 text-black" type="text" id="coach-amount"
+                            placeholder="Coach Amount" />
+                    </div>
+
+                    <button id="calculate-total"
+                        class="text-white font-semibold text-xl py-2 hover:bg-sky-700 bg-blue-900 w-11/12 text-center my-5">
+                        Calculate Total
+                    </button>
+                    <h1 class="text-white text-2xl font-bold">
+                        Total : $<span class="text-blue-600" id="total">00</span>
+                    </h1>
+                </div>
+            </div>
+            <!-- Taka Poysha End -->
+            <!-- Side Menu End   -->
         </section>
     </main>
+    <!-- Main Section end -->
 
 </body>
 
